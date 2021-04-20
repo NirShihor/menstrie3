@@ -1,0 +1,102 @@
+<%- include('./partials/header.ejs') %>
+
+    <div class="flex-container">
+      <div class="top-text">
+        <div class="top-heading">
+          <h1>Welcome</h1>
+        </div>
+        <div class="heading">
+          <h4>
+            To Menstrie Community <br />
+            Council's Website
+          </h4>
+        </div>
+      </div>
+      <div class="two-images">
+        <div class="top-img">
+          <img src="/images/MenstrieSunLong-min.jpg" alt="" />
+        </div>
+        <div class="under-image">
+          <img src="/images/menstriecastle-min.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    
+    <div class="outer-text">
+      <div class="text-container">
+Menstrie is a small village of around three thousand people in Clackmannanshire below Dumyat Hill along the Hillfoots. <br>
+     </div>
+    </div>
+    </div>
+
+    <!-- Use jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Animate smooth scroll About Section
+      $(document).ready(function () {
+        $('#goToAboutPage').on('click', function () {
+          const aboutPage = $('#about-page').position().top;
+
+          $('html, body').animate(
+            {
+              scrollTop: aboutPage,
+            },
+            900
+          );
+        });
+
+        // Animate smooth scroll Why Easy Dog Section
+        $('#goToWhyEasydogPage').on('click', function () {
+          const whyEasyDog = $('#why-eadydog-page').position().top;
+
+          $('html, body').animate(
+            {
+              scrollTop: whyEasyDog,
+            },
+            900
+          );
+        });
+
+        // Animate smooth scroll Services Section
+        $('#goToServicesPage').on('click', function () {
+          const services = $('#services-page').position().top;
+
+          $('html, body').animate(
+            {
+              scrollTop: services,
+            },
+            900
+          );
+        });
+
+        // Animate smooth scroll Testimonials Section
+        $('#goToTestimonialsPage').on('click', function () {
+          const testimonials = $('#testimonials-page').position().top;
+
+          $('html, body').animate(
+            {
+              scrollTop: testimonials,
+            },
+            900
+          );
+        });
+
+        // Animate smooth scroll Contact Section
+        $('#goToContactsPage').on('click', function () {
+          const contact = $('#contacts-page').position().top;
+
+          $('html, body').animate(
+            {
+              scrollTop: contact,
+            },
+            900
+          );
+        });
+      });
+    </script>
+  </body>
+</html>

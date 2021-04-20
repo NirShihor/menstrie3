@@ -1,0 +1,270 @@
+body,
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #eee;
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+  font-size: 16px;
+  width: 95%;
+}
+
+:root {
+  --primary-color: rgba(136, 137, 138, 0);
+  --overlay-color: rgb(79, 243, 167);
+  --menu-speed: 0.75s;
+}
+
+/* Navbar */
+/* Add a black background color to the top navigation */
+.topnav {
+  /* overflow: hidden; */
+  text-align: center !important;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 2rem;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  /* float: left; */
+  display: inline;
+  color: black;
+  /* text-align: center; */
+  padding: 0.6rem;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: grey;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Prevent multi-word navlink from splitting on resize */
+.trans {
+  color: transparent;
+}
+/* Navbar End */
+
+.flex-container {
+  width: 100%;
+}
+/* Top image */
+.top-img {
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+
+.top-img img {
+  width: 100%;
+  height: auto;
+}
+
+.under-image {
+  position: relative;
+  width: 11rem;
+  float: right;
+  margin-right: 1rem;
+  margin-top: -3rem;
+}
+
+.under-image img {
+  width: 100%;
+  height: auto;
+}
+
+.top-text {
+  margin-top: 2rem;
+}
+
+.top-heading {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.heading {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.outer-text {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  margin-top: 4.5rem;
+}
+
+.text-container {
+  text-align: left;
+}
+
+@media screen and (min-width: 700px) {
+  .topnav {
+    text-align: center !important;
+    margin: auto;
+  }
+  .flex-container {
+    display: flex;
+    text-align: center !important;
+    margin: auto;
+    width: 80%;
+  }
+  .two-images {
+    margin-top: 3rem;
+  }
+  .top-img {
+    flex: 1;
+    /* margin-right: 15rem; */
+  }
+  .top-img img {
+    width: 25rem;
+  }
+  .under-image {
+    width: 11rem;
+  }
+  .top-text {
+    flex: 2;
+    margin-right: 2rem;
+    /* text-align: right; */
+  }
+  .outer-text {
+    text-align: center !important;
+  }
+  .text-container {
+    margin: auto;
+    margin-top: 2rem !important;
+    line-height: 1.5rem;
+  }
+
+  .top-heading {
+    margin-top: 3rem;
+  }
+  .heading {
+    line-height: 2.5rem;
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .flex-container {
+    max-width: 60% !important;
+  }
+  .text-container {
+    width: 80% !important;
+  }
+  .flex-container {
+      width: 70% !important;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .flex-container {
+    width: 60% !important;
+  }
+
+  .outer-text {
+    width: 70% !important;
+    margin-top: 2rem;
+  }
+  /* .text-container {
+    width: 40% !important;
+  } */
+}
+
+@media screen and (min-width: 1500px) {
+  .flex-container {
+    max-width: 55% !important;
+  }
+  .text-container {
+    width: 65% !important;
+  }
+}
+
+.top-img2 {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 500px) {
+  .top-img2 {
+    margin-top: 2rem;
+    width: 80% !important;
+  }
+
+  .top-img2 img {
+    width: 100%;
+  }
+
+  .outer-text2 {
+    margin-left: 15vw !important;
+  }
+}
+
+.outer-text2 {
+  margin-top: 1.5rem !important;
+  text-align: center;
+  margin: auto;
+}
+
+.facebook {
+  height: 2rem;
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+  line-height: 2rem;
+  margin-bottom: -0.5rem;
+}
+
+.indent-text {
+  font-size: 0.9rem;
+  margin-left: 2rem;
+  line-height: 1rem;
+}
+
+.text-container2 {
+  margin-top: 2rem;
+}
+
+.para-heading {
+  text-align: center;
+  margin: auto;
+}
+
+.para-img {
+  text-align: center;
+  margin: auto;
+}
+
+.heading2 {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
+
+  @media screen and (min-width: 800px) {
+    .text-container2 {
+      display: flex;
+      margin-top: 3rem;
+    }
+
+    .para-img {
+      flex: 1;
+      margin-top: 0;
+    }
+    .para-section {
+      flex: 2;
+      margin-left: 2rem;
+      font-size: 0.8rem;
+    }
+    .para-heading {
+      text-align: left;
+    }
+  }
+}
